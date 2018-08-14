@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hollysys.hiadsp.mapper.TransformerMapper">
+    <resultMap id="transformerMap" type="com.hollysys.hiadsp.pojo.TransformerEntity">
+        <id property="TIMEID" column="TIMEID" javaType="java.sql.Timestamp"></id>
+        <id property="V001" column="V001" javaType="java.lang.Double"></id>
+        <id property="V002" column="V002" javaType="java.lang.Double"></id>
+        <id property="V003" column="V003" javaType="java.lang.Double"></id>
+        <id property="V004" column="V004" javaType="java.lang.Double"></id>
+        <id property="V005" column="V005" javaType="java.lang.Double"></id>
+        <id property="V006" column="V006" javaType="java.lang.Double"></id>
+        <id property="V007" column="V007" javaType="java.lang.Double"></id>
+    </resultMap>
+    <select id="selectTransformers" resultMap="transformerMap">
+		SELECT [TIMEID]
+      ,[V001]
+      ,[V002]
+      ,[V003]
+      ,[V004]
+      ,[V005]
+      ,[V006]
+      ,[V007]
+  FROM [NTS-900D].[dbo].[TS_H1_000] where TIMEID >= '2018-1.18'
+	</select>
+    <resultMap id="transformerMap2" type="com.hollysys.hiadsp.pojo.TransformerEntity">
+        <id property="TIMEID" column="TIMEID" javaType="java.sql.Timestamp"></id>
+        <id property="V001" column="V039" javaType="java.lang.Double"></id>
+        <id property="V002" column="V040" javaType="java.lang.Double"></id>
+        <id property="V003" column="V041" javaType="java.lang.Double"></id>
+        <id property="V004" column="V032" javaType="java.lang.Double"></id>
+        <id property="V005" column="V043" javaType="java.lang.Double"></id>
+        <id property="V006" column="V044" javaType="java.lang.Double"></id>
+        <id property="V007" column="V045" javaType="java.lang.Double"></id>
+    </resultMap>
+    <select id="selectTransformers2" resultMap="transformerMap2">
+		SELECT [TIMEID]
+      ,[V039]
+      ,[V040]
+      ,[V041]
+      ,[V042]
+      ,[V043]
+      ,[V044]
+      ,[V045]
+  FROM [NTS-900D].[dbo].[TS_H1_002] where TIMEID >= '2018-1.18'
+	</select>
+
+    <resultMap id="transformerMap3" type="com.hollysys.hiadsp.pojo.TransformerEntity">
+        <id property="TIMEID" column="TIMEID" javaType="java.sql.Timestamp"></id>
+        <id property="V001" column="V006" javaType="java.lang.Double"></id>
+        <id property="V002" column="V007" javaType="java.lang.Double"></id>
+        <id property="V003" column="V008" javaType="java.lang.Double"></id>
+        <id property="V004" column="V009" javaType="java.lang.Double"></id>
+        <id property="V005" column="V010" javaType="java.lang.Double"></id>
+        <id property="V006" column="V011" javaType="java.lang.Double"></id>
+        <id property="V007" column="V012" javaType="java.lang.Double"></id>
+    </resultMap>
+    <select id="selectTransformers3" resultMap="transformerMap3">
+		SELECT [TIMEID]
+      ,[V006]
+      ,[V007]
+      ,[V008]
+      ,[V009]
+      ,[V010]
+      ,[V011]
+      ,[V012]
+  FROM [NTS-900D].[dbo].[TS_H1_010] where TIMEID >= '2018-1.18'
+	</select>
+    <resultMap id="transformerMap4" type="com.hollysys.hiadsp.pojo.TransformerEntity">
+        <id property="TIMEID" column="TIMEID" javaType="java.sql.Timestamp"></id>
+        <id property="V001" column="V102" javaType="java.lang.Double"></id>
+        <id property="V002" column="V103" javaType="java.lang.Double"></id>
+        <id property="V003" column="V104" javaType="java.lang.Double"></id>
+        <id property="V004" column="V105" javaType="java.lang.Double"></id>
+        <id property="V005" column="V106" javaType="java.lang.Double"></id>
+        <id property="V006" column="V107" javaType="java.lang.Double"></id>
+        <id property="V007" column="V108" javaType="java.lang.Double"></id>
+    </resultMap>
+    <select id="selectTransformers4" resultMap="transformerMap4">
+		SELECT [TIMEID]
+      ,[V006]
+      ,[V007]
+      ,[V008]
+      ,[V009]
+      ,[V010]
+      ,[V011]
+      ,[V012]
+  FROM [NTS-900D].[dbo].[TS_H1_004] where TIMEID >= '2018-1.18'
+	</select>
+    <resultMap id="transformerMap5" type="com.hollysys.hiadsp.pojo.TransformerEntity">
+        <id property="TIMEID" column="TIMEID" javaType="java.sql.Timestamp"></id>
+        <id property="V001" column="V026" javaType="java.lang.Double"></id>
+        <id property="V002" column="V027" javaType="java.lang.Double"></id>
+        <id property="V003" column="V028" javaType="java.lang.Double"></id>
+        <id property="V004" column="V029" javaType="java.lang.Double"></id>
+        <id property="V005" column="V030" javaType="java.lang.Double"></id>
+        <id property="V006" column="V031" javaType="java.lang.Double"></id>
+        <id property="V007" column="V032" javaType="java.lang.Double"></id>
+    </resultMap>
+    <select id="selectTransformers5" resultMap="transformerMap5">
+		SELECT [TIMEID]
+      ,[V026]
+      ,[V027]
+      ,[V028]
+      ,[V029]
+      ,[V030]
+      ,[V031]
+      ,[V032]
+  FROM [NTS-900D].[dbo].[TS_H1_007] where TIMEID >= '2018-1.18'
+	</select>
+</mapper>
